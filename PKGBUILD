@@ -21,12 +21,10 @@ conflicts=("${pkgname%-git}")
 
 build() {
 	cd ../
-	echo "siema $pkgdir"
 	make
 }
 
 package() {
 	cd ../
-	echo "siema $pkgdir"
-	DESTDIR="$pkgdir/" PREFIX=/usr/local/ make install
+	DESTDIR="$pkgdir/" PREFIX=/usr make install
 }
