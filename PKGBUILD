@@ -6,7 +6,6 @@ pkgdesc="dwm-like bar for dwl"
 arch=('x86_64')
 url="https://git.sr.ht/~raphi/someblocks"
 license=('ISC')
-depends=('somebar')
 makedepends=('git' 'make')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
